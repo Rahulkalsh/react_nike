@@ -126,7 +126,6 @@ nav ul {
   }
   nav ul {
     display: flex;
-    list-style: none;
   }
   .disable_image{
     display: block;
@@ -168,8 +167,6 @@ nav ul {
   }
   nav ul {
     display: flex;
-    list-style: none;
-    text-align: center;
   }
 
   .hero {
@@ -216,8 +213,6 @@ nav ul {
   }
   nav ul {
     display: flex;
-    list-style: none;
-    text-align: center;
   }
   .hero h1 {
     font-size: 56px;
