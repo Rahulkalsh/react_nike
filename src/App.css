@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.hero {
+  padding: 40px 16px; /* Add horizontal padding for mobile views */
+  display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  gap: 20px; /* Space between content */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1; /* Allow content to adjust flexibly */
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 64px; /* Reduced for better responsiveness */
+  line-height: 72px;
+  text-align: center; /* Center text for smaller screens */
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+  max-width: 400px;
+  margin: 0 auto; /* Center text block */
+  text-align: center;
+}
+
+.hero-btn {
+  display: flex;
+  flex-direction: row; /* Default horizontal layout */
+  gap: 20px;
+  justify-content: center; /* Center buttons */
+}
+
+.hero-btn button {
+  font-size: 16px; /* Reduced size for better balance */
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+.shopping p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center; /* Center icons */
+}
+
+.hero-image {
+  max-width: 90%; /* Prevent images from exceeding container width */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto; /* Center image */
+}
+.disable_image {
+  display: none;
+}
+/* Responsive Styles */
+
+/* Very small screens (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  .disable_image{
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hero-btn {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 12px;
+  }
+
+  .brand-icons img {
+    max-width: 50px; /* Smaller icon size */
+    height: auto;
+  }
+
+  .hero-image {
+    display: none;
+    max-width: 80%;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+  nav ul {
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .brand-icons img {
+    max-width: 60px;
+  }
+  .disable_image{
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .hero-image {
+    display: none;
+    max-width: 85%;
+  }
+}
+
+/* Tablets and similar devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+  nav ul {
+    gap: 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-btn {
+    gap: 20px;
+  }
+
+  .brand-icons {
+    gap: 12px;
+  }
+
+  .disable_image{
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .hero-image {
+    display: none;
+    max-width: 85%;
+  }
+}
