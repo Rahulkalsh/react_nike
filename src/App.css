@@ -167,7 +167,8 @@ nav ul {
     margin: 0px auto;
   }
   nav ul {
-    gap: 16px;
+    display: flex;
+    list-style: none;
     text-align: center;
   }
 
@@ -214,7 +215,8 @@ nav ul {
     margin: 0px auto;
   }
   nav ul {
-    gap: 20px;
+    display: flex;
+    list-style: none;
     text-align: center;
   }
   .hero h1 {
