@@ -126,7 +126,6 @@ nav ul {
   }
   nav ul {
     display: flex;
-    flex-direction:column;
     list-style: none;
   }
   .disable_image{
